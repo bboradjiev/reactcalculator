@@ -24,10 +24,11 @@ function App() {
     try {
       if (operation === "=") {
         setButtonValue(eval(buttonValue));
-      } else if (operation === "RESET") {
+       } else if (operation === "RESET") {
         setButtonValue("");
       } else if (operation === "DEL") {
-        setButtonValue(buttonValue.slice(0, -1));
+        let newValue = buttonValue.toString().slice(0, -1);
+        setButtonValue(newValue);
       }
     } catch (error) {
       setButtonValue("Invalid Operation");
