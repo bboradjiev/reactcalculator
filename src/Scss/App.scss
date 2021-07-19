@@ -1,0 +1,148 @@
+@import "variables.scss";
+@import "toggleSwitch.scss";
+@import "calcScreen.scss";
+@import "calcButtons.scss";
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+.App_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $main__color_theme_1;
+
+  .App__body {
+    width: 500px;
+  }
+
+  .calc {
+    color: #fffffd;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.App_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $second__color_theme_2;
+
+  .App__body {
+    width: 500px;
+  }
+
+  .calc {
+    color: $second__color_theme_2_calc;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .calc__screen {
+    background: $second__color_theme_2_screen;
+    color: $main__color_theme_2_screen_input;
+  }
+  .theme,
+  span {
+    color: $second__color_theme_2_calc;
+  }
+  .theme_switch {
+    background: $second__color_theme_2_switch;
+  }
+  .dot {
+    background: $second__color_theme_2_dot;
+  }
+
+  .calc_buttons {
+    background: $main__color_theme_2_calc_background;
+    .button {
+      background: $main__color_theme_2_button;
+    }
+    .big_button_one {
+      background: $main__color_theme_2_button_one;
+      color: #fbffff;
+    }
+    .big_button_two {
+      background: $main__color_theme_2_button_two;
+      color: #fbffff;
+    }
+    .del {
+      background: $main__color_theme_2_button_one;
+      color: #fbffff;
+    }
+  }
+}
+
+.App_3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $second__color_theme_3;
+
+  .App__body {
+    width: 500px;
+  }
+
+  .calc {
+    color: $second__color_theme_3_calc;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .calc__screen {
+    background: $second__color_theme_3_screen;
+    color: $main__color_theme_3_screen_input;
+  }
+  .theme,
+  span {
+    color: $second__color_theme_3_calc;
+  }
+  .theme_switch {
+    background: $second__color_theme_3_switch;
+  }
+  .dot {
+    background: $second__color_theme_3_dot;
+  }
+
+  .calc_buttons {
+    background: $main__color_theme_3_calc_background;
+    .button {
+      background: $main__color_theme_3_button;
+      color: $second__color_theme_3_calc;
+      border-bottom: 5px solid #861f9d;
+    }
+    .big_button_one {
+      background: $main__color_theme_3_button_one;
+      color: #fbffff;
+    }
+    .big_button_two {
+      background: $main__color_theme_3_button_two;
+      border-bottom: 5px solid #0eb4a9;
+      color: #861f9d;
+    }
+    .del {
+      background: $main__color_theme_3_button_one;
+      color: #fbffff;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.calc_buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 20px 10px;
+
+  // height: 460px;
+  // width: 500px;
+  border-radius: 10px;
+  background: $main__color_theme_1_screen;
+
+  .button {
+    height: 60px;
+    width: 100px;
+    margin: 10px 5px;
+    border-radius: 10px;
+    background: $main__color_theme_1_button;
+    border: none;
+    border-bottom: 5px solid #b5a398;
+    font-size: 25px;
+    font-weight: 550;    
+    color: #434953;
+    cursor: pointer;
+  }
+  .big_button_one {
+    flex-grow: 1;
+    max-width: 210px;
+    background: $main__color_theme_1_button_one;
+    color: #fbffff;
+  }
+  .big_button_two{
+    flex-grow: 1;
+    max-width: 210px;
+    background: $main__color_theme_1_button_two;
+    color: #fbffff;
+  }
+  .del{
+    background: $main__color_theme_1_button_one;
+    color: #fbffff;
+  }
+}
