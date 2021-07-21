@@ -23,14 +23,21 @@ function App() {
   const calculation = (operation) => {
     try {
       if (operation === "=") {
-        setButtonValue(eval(buttonValue));
-       } else if (operation === "RESET") {
+        // eslint-disable-next-line
+        let value = eval(buttonValue);
+        if (!isFinite(value)) {
+          throw new Error("Cannot devide by 0");
+        } else {
+          setButtonValue(value);
+        }
+      } else if (operation === "RESET") {
         setButtonValue("");
       } else if (operation === "DEL") {
         let newValue = buttonValue.toString().slice(0, -1);
         setButtonValue(newValue);
       }
     } catch (error) {
+      alert(error.message);
       setButtonValue("Invalid Operation");
     }
   };
