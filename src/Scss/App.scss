@@ -2,6 +2,7 @@
 @import "toggleSwitch.scss";
 @import "calcScreen.scss";
 @import "calcButtons.scss";
+@import "media.scss";
 
 * {
   box-sizing: border-box;
@@ -16,6 +17,7 @@
   align-items: center;
   height: 100vh;
   background-color: $main__color_theme_1;
+  padding: 0 10px;
 
   .App__body {
     width: 500px;
@@ -146,3 +148,6 @@
     }
   }
 }
+
+
+

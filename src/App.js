@@ -27,9 +27,8 @@ function App() {
         let value = eval(buttonValue);
         if (!isFinite(value)) {
           throw new Error("Cannot devide by 0");
-        } else {
-          setButtonValue(value);
         }
+        setButtonValue(value);
       } else if (operation === "RESET") {
         setButtonValue("");
       } else if (operation === "DEL") {

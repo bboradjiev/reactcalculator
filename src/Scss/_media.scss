@@ -1,0 +1,57 @@
+@media only screen and (max-width: 550px) {
+  .calc_buttons {
+    .button {
+      height: 40px;
+      width: 90px;
+    }
+    .big_button_two,
+    .big_button_one {
+      max-width: 189px;
+    }
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .calc_buttons {
+    .button {
+      height: 40px;
+      width: 75px;
+    }
+    .big_button_two,
+    .big_button_one {
+      max-width: 160px;
+    }
+  }
+}
+
+@media only screen and (max-width: 380px) {
+    .calc_buttons {
+      .button {
+        height: 40px;
+        width: 60px;
+      }
+      .big_button_two,
+      .big_button_one {
+        max-width: 130px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    .calc_buttons {
+      .button {
+        height: 40px;
+        width: 50px;
+        font-size: 18px;
+
+      }
+      .big_button_two,
+      .big_button_one {
+        max-width: 109px;
+      }
+
+      .App_1 .calc{
+          font-size: 10px;
+      }
+    }
+  }
