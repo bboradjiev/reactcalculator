@@ -9,6 +9,9 @@
       max-width: 189px;
     }
   }
+  .calc__screen{
+    font-size: 40px
+  }
 }
 
 @media only screen and (max-width: 440px) {
@@ -34,6 +37,9 @@
       .big_button_one {
         max-width: 130px;
       }
+    }
+    .calc__screen{
+      font-size: 30px
     }
   }
 
